@@ -18,8 +18,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Static middleware
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
-app.use('/users', userRoute());
-app.use('/clothes', clothingRoute());
+app.use('/users', userRoute);
+app.use('/clothes', clothingRoute);
 
 app.get('/*', (req, res, next) => {
 	res.sendFile(path.join(__dirname, '..', 'index.html'));
