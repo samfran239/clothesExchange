@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Clothes } = require('../models');
 
-// GET find all users
+// GET find all users WORKING
 router.get('/', async (req, res, next) => {
 	try {
 		const allClothes = await Clothes.findAll();
@@ -10,7 +10,7 @@ router.get('/', async (req, res, next) => {
 		next(err);
 	}
 });
-//GET one clothes
+//GET one clothes WORKING!
 router.get('/:clothesId', async (req, res, next) => {
 	try {
 		console.log('WHAT ARE WE GETTING? clothes', req.params);
@@ -25,6 +25,7 @@ router.put('/:clothesId', async (req, res, next) => {
 	try {
 		const letsUpdate = await Clothes.findById(req.params.clothesId);
 		const updated = await letsUpdate.update(req.body);
+		console.log('req.body', req.body, 'updated', updated.itemName); //nothing coming through in req.body
 		res.status(200).send(updated);
 	} catch (err) {
 		next(err);

@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User } = require('../models');
 
-// GET find all users
+// GET find all users WORKING
 router.get('/', async (req, res, next) => {
 	try {
 		const allUsers = await User.findAll();
@@ -10,7 +10,7 @@ router.get('/', async (req, res, next) => {
 		next(err);
 	}
 });
-//GET one user
+//GET one user WORKING!
 router.get('/:userId', async (req, res, next) => {
 	try {
 		console.log('WHAT ARE WE GETTING?', req.params);
@@ -41,11 +41,11 @@ router.post('/', async (req, res, next) => {
 	}
 });
 
-//DELETE one user
+//DELETE one user --missing where truncate or attribute
 router.delete('/:userId', async (req, res, next) => {
 	try {
 		await User.destroy(req.params.userId);
-		res.sendStatus(204);
+		res.status(204).send('bye bye!');
 	} catch (err) {
 		next(err);
 	}

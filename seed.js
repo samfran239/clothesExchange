@@ -4,40 +4,71 @@ const Clothes = require('./server/models/clothes');
 
 const users = [
 	{
-		name: 'Samantha Francis',
-		email: 'sam@samFran.com',
-		userPhoto: 'REPLACE'
+		name: 'Janet Levinson',
+		email: 'J.Levinson@dunderMifflin.com',
+		userPhoto:
+			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsOR-j2iie0AzOwvm-wZy9lSjmu6vQRvb2k0pj32RkfKCoWqX5'
 	},
 	{
-		name: 'Regina Hall',
-		email: 'regina@Hall.com',
-		userPhoto: 'REPLACE'
+		name: 'Angela Schrute',
+		email: 'A.Schrute@DunderMifflin.com',
+		userPhoto: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Angela_Martin.jpg/230px-Angela_Martin.jpg'
 	},
 	{
-		name: 'Betty White',
-		email: 'betty@White.com',
-		userPhoto: 'REPLACE'
+		name: 'Pam Halpert',
+		email: 'P.Halper@DunderMifflin.com',
+		userPhoto: 'https://i.gifer.com/2iLt.gif'
 	}
 ];
 
 const clothes = [
 	{
-		itemName: 'Bunny Blouse',
-		itemColor: 'Red and White',
-		itemDescription: 'Lovely blouse with frills to give th guys thrills',
-		itemPhoto: 'REPLACE'
+		itemName: 'V-Neck Sweater',
+		itemColor: 'Red',
+		itemDescription: 'Show off those new boobs with this daring yet office appropriate top!',
+		itemPhoto:
+			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQir38ifHI7t8TnmEP0Ia6dp_XIG8BcWkL7fpUb0JBuGFZnc8fmlQ',
+		userId: 1
 	},
 	{
-		itemName: 'Giraffe Pants',
-		itemColor: 'Yellow and Black',
-		itemDescription: 'Lengthen those legs with these palooza pants',
-		itemPhoto: 'REPLACE'
+		itemName: 'Button-down Blouse',
+		itemColor: 'Off White',
+		itemDescription: "Show 'em who's boss with this blouse, from The Loft",
+		itemPhoto:
+			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTax5qWrlFJMp5XGVyCMABPCCo4fCimmqIijLqcvjHiJYcJ-2XOvw',
+		userId: 1
 	},
 	{
-		itemName: 'Elephant Undies',
+		itemName: 'British Uniform Blazer w/Red Turtleneck',
+		itemColor: 'Red, Black, Yellow',
+		itemDescription:
+			'Stay modest, yet catch the eye of the guy a couple desks over with this enticing blazer-turtleneck combo',
+		itemPhoto: 'http://img2.thejournal.ie/inline/4187026/original/?width=620&version=4187026',
+		userId: 2
+	},
+	{
+		itemName: 'Sexy Nurse Costume',
+		itemColor: 'White, Red',
+		itemDescription: "Sometimes it's ok to show a little skin",
+		itemPhoto:
+			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtjREyi2yaWhY7QkrFeLRkC5VngNhn6xtSFFOEVhuDnOrtiw9m3g',
+		userId: 2
+	},
+	{
+		itemName: 'Maternity Dress',
 		itemColor: 'Grey',
-		itemDescription: 'Doesnt have any elephants on them ',
-		itemPhoto: 'REPLACE'
+		itemDescription: 'Work and baby appropriate',
+		itemPhoto:
+			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx-daxUoU41ES0nRytIE9YpHyd_myX2TDse3rt5uA6LGzq_L5s',
+		userId: 3
+	},
+	{
+		itemName: 'Cat Ears',
+		itemColor: 'Black',
+		itemDescription: 'Just add some face paint and you have your halloween costume',
+		itemPhoto:
+			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLBA5s8p7BQVCuCZMSdJ1TlVXxrwmT4V-n1ItcYnP8KH5XhsG2',
+		userId: 3
 	}
 ];
 
